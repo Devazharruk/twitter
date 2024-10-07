@@ -4,7 +4,7 @@ import axios from "axios";
 const App = () => {
   const [data, setdata] = useState({});
   const fetchapi = async () => {
-    const response = await axios.get("http://localhost:5000/welcome");
+    const response = await axios.get("https://twitterbackend-eight.vercel.app");
     console.log(response.data);
     setdata(response.data);
   };
